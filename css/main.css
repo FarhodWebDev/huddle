@@ -153,8 +153,37 @@ h1 {
   gap: 1.6rem;
 }
 
+.brand__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  padding: 10px 5px;
+}
+
+.brand__link:nth-child(3) {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
 svg {
   width: 30px !important;
+  margin: 0 auto;
+}
+
+svg:last-child {
+  margin-top: 5px;
+  margin-left: 4px;
+}
+
+.facebook {
+  margin-right: 4px;
+  margin-left: 2px;
+  margin-top: 1px;
+  transform: scale(1.5);
 }
 
 svg path {
