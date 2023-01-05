@@ -1,0 +1,240 @@
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v20-latin-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */
+    url("../fonts/poppins-v20-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+    url("../fonts/poppins-v20-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("../fonts/poppins-v20-latin-regular.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v20-latin-600.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("../fonts/poppins-v20-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */
+    url("../fonts/poppins-v20-latin-600.woff") format("woff"),
+    /* Modern Browsers */
+    url("../fonts/poppins-v20-latin-600.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("../fonts/poppins-v20-latin-600.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 4px dotted violet;
+  outline-offset: 2px;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #684bb1;
+  background-image: url("../pictures/png/body-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  display: flex;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 1.3rem 6.3rem;
+  border: none;
+  border-radius: 28px;
+  color: #684bb1;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #e880e8;
+}
+
+.header .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 59px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero img {
+  width: 696px;
+}
+
+.hero__info {
+  width: 100%;
+  max-width: 520px;
+}
+
+.hero__title,
+.hero__text {
+  margin-bottom: 2.4rem;
+}
+
+.footer .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.brand__list {
+  display: flex;
+  justify-content: end;
+  gap: 1.6rem;
+}
+
+svg {
+  width: 30px !important;
+}
+
+svg path {
+  transition: all 0.2s ease-in;
+}
+
+a:hover svg path,
+a:active svg path,
+a.active svg path {
+  fill: #ff52c1;
+}
+
+@media screen and (max-width: 1300px) {
+  .hero img {
+    width: 600px;
+  }
+
+  .hero__title {
+    font-size: 3.8rem;
+  }
+
+  .hero__text {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1096px) {
+  .hero .container {
+    flex-direction: column;
+    gap: 6rem;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 3.4rem;
+  }
+
+  .btn {
+    display: block;
+    padding: 1.1rem 7.5rem;
+    margin: 0 auto;
+  }
+
+  .brand__list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .header .container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .hero img {
+    width: 480px;
+  }
+
+  .hero__title {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+
+  .hero__text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .hero img {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero .container {
+    gap: 6rem;
+  }
+
+  .hero img {
+    width: 296px;
+  }
+}
